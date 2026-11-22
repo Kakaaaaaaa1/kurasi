@@ -5,7 +5,7 @@ Aplikasi Android untuk mengoleksi apa saja. Setiap item otomatis menjadi **kartu
 scan QR. Dilengkapi statistik pengeluaran, wishlist dengan target harga, pencapaian, serta catatan nilai, nota, dan garansi.
 
 Dibuat sebagai proyek akhir mata kuliah Mobile Programming. Native Android, Java + XML, database SQLite, tanpa
-backend dan tanpa internet.
+backend. Internet hanya dipakai untuk mengecek dan mengunduh pembaruan dari GitHub Releases (lihat `docs/PEMBARUAN.md`).
 
 ## Fitur
 
@@ -74,3 +74,7 @@ Untuk mencoba semua fitur, buka Menu, Pengaturan, lalu Muat data contoh.
 - Kode item (`SNK-014`) dibuat otomatis dari awalan koleksi. Isi QR berformat `kurasi:SNK-014`.
 - Skor tier dihitung ulang setiap item disimpan atau nilainya diperbarui.
 
+
+## Hak cipta
+
+© 2026 Kaka Anditya Pambayung. Semua hak dilindungi. Kode dipublikasikan agar bisa dilihat dan dipelajari; menyalin, mengubah, atau membagikan ulang memerlukan izin tertulis pemilik. Rincian ada di berkas [LICENSE](LICENSE).

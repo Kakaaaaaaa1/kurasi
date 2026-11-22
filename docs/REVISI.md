@@ -157,3 +157,9 @@ Masih terbuka: skor kelangkaan hanya dari harga, nilai sekarang masih manual, te
 - Tes unit untuk perbandingan versi dan pembacaan jawaban GitHub (6 tes). Total 15 tes.
 - Versi naik ke 1.1 (versionCode 2). Aplikasi kini memakai izin INTERNET dan REQUEST_INSTALL_PACKAGES.
 - Belum diuji ujung ke ujung karena repo GitHub belum dibuat: alamat repo di `Updater.REPO` sudah `Kakaaaaaaa1/kurasi`.
+
+## Hak cipta
+
+- Berkas `LICENSE`: © 2026 Kaka Anditya Pambayung, semua hak dilindungi (kode boleh dilihat dan dipelajari, menyalin atau membagikan ulang perlu izin tertulis). Bagian "Hak cipta" ditambahkan di README. Pengaturan > Tentang menampilkan "© 2026 KAKA ANDITYA PAMBAYUNG".
+- README tidak lagi menulis "tanpa internet": internet dipakai untuk cek dan unduh pembaruan.
+- Perubahan ini baru ada di repo. APK 1.1 yang sudah dibagikan belum memuat baris hak cipta di Pengaturan. Baris itu ikut di rilis berikutnya (1.2).

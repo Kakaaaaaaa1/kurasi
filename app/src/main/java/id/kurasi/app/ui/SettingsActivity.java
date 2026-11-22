@@ -142,7 +142,8 @@ public class SettingsActivity extends ScrollScreenActivity {
                 () -> UpdatePrompt.check(this, true)));
 
         TextView about = new TextView(this, null, 0, R.style.Neo_Label);
-        about.setText("KURASI " + id.kurasi.app.util.Updater.currentVersion(this) + " · KARTU KOLEKSI DENGAN QR");
+        about.setText("KURASI " + id.kurasi.app.util.Updater.currentVersion(this) + " · KARTU KOLEKSI DENGAN QR\n"
+                + "© 2026 KAKA ANDITYA PAMBAYUNG");
         about.setPadding(0, dp(24), 0, 0);
         content.addView(about);
     }
