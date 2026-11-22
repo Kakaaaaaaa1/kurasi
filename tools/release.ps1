@@ -1,4 +1,4 @@
-<#
+﻿<#
   Bangun APK lalu terbitkan sebagai rilis GitHub, supaya aplikasi di HP bisa menawarkan pembaruan.
 
   Sebelum menjalankan:
@@ -31,7 +31,6 @@ if ($LASTEXITCODE -ne 0) { throw "Build atau tes gagal, rilis dibatalkan." }
 New-Item -ItemType Directory -Force dist | Out-Null
 $apk = "dist\Kurasi-$tag.apk"
 Copy-Item app\build\outputs\apk\debug\app-debug.apk $apk -Force
-Copy-Item $apk dist\Kurasi-v1.0-debug.apk -Force   # salinan terbaru dengan nama lama
 
 git tag $tag
 git push origin HEAD
