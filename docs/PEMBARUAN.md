@@ -19,3 +19,10 @@ Aplikasi mengecek rilis terbaru di GitHub, menawarkan pembaruan, mengunduh APK-n
 - **Repo harus publik** karena aplikasi mengunduh tanpa login.
 - **Izin internet.** Sebelum fitur ini aplikasi sepenuhnya offline. Sekarang aplikasi memakai internet hanya untuk dua hal: cek rilis di api.github.com dan unduh APK dari GitHub.
 - **Versi lama tidak punya fitur ini.** APK versi 1.0 yang sudah terpasang di HP teman perlu dipasang manual sekali dengan versi 1.1. Setelah itu pembaruan berikutnya otomatis.
+
+## Hasil uji ujung ke ujung (emulator Android 16)
+- Pasang v1.1 resmi dari GitHub, terbitkan v1.2, buka Pengaturan > Cek pembaruan: dialog "Versi 1.2 tersedia" muncul dengan catatan rilis dan ukuran 7,6 MB. Unduhan berhasil dan ukurannya sama dengan di GitHub. Sheet izin pemasangan muncul, dan setelah izin dinyalakan pemasang Android menampilkan "Update this app?" (bukan pasang baru, jadi tanda tangan cocok).
+- Pemasangan lewat pemasang sistem di emulator ditolak Google Play Protect (`INSTALL_FAILED_VERIFICATION_FAILURE`). File yang sama berhasil dipasang lewat `adb install -r`: versi naik ke 1.2, 11 kartu tetap utuh, dan folder unduhan dibersihkan otomatis saat aplikasi dibuka. Emulator tidak punya akses ke server verifikasi Google, jadi belum terbukti apakah HP asli menerimanya. Di HP asli Play Protect biasanya hanya menampilkan "Scan app?", lalu pasang.
+- Kalau HP teman menolak dengan pesan serupa: ketuk "Install anyway" atau "More details", atau matikan sementara Play Protect.
+- Cek otomatis saat aplikasi dibuka dibatasi tiap 3 jam, jadi saat menguji pakai Pengaturan > Cek pembaruan.
+- Emulator perlu `-dns-server 8.8.8.8` kalau DNS-nya tidak jalan.
