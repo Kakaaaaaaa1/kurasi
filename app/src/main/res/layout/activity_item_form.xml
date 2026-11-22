@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <!-- Tombol Simpan sengaja berada di luar ScrollView supaya tidak menutupi kolom
+         saat keyboard terbuka. -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btnBack"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:contentDescription="Kembali"
+                    android:src="@drawable/ic_back"
+                    style="@style/Neo.IconButton" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_weight="1"
+                    android:text="ITEM BARU"
+                    style="@style/Neo.Title" />
+
+                <ImageView
+                    android:id="@+id/btnDelete"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:contentDescription="Hapus"
+                    android:src="@drawable/ic_trash"
+                    android:visibility="gone"
+                    style="@style/Neo.IconButton" />
+            </LinearLayout>
+
+            <id.kurasi.app.ui.view.CardView
+                android:id="@+id/preview"
+                android:layout_width="188dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp" />
+
+            <LinearLayout
+                android:id="@+id/tierBar"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/tierCaption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/muted"
+                style="@style/Neo.Mono" />
+
+            <LinearLayout
+                android:id="@+id/form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="SIMPAN ITEM"
+        style="@style/Neo.Button" />
+</LinearLayout>

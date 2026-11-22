@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kurasi</string>
+    <string name="notif_channel_name">Pengingat Kurasi</string>
+    <string name="widget_description">Total nilai koleksi dan jumlah kartu</string>
+</resources>

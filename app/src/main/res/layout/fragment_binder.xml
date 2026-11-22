@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_ink_block"
+                android:paddingStart="8dp"
+                android:paddingTop="3dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="1dp"
+                android:text="KU"
+                android:textColor="@color/accent_on_ink"
+                android:textSize="20sp"
+                style="@style/Neo.Display" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="9dp"
+                android:text="KURASI"
+                android:textSize="26sp"
+                style="@style/Neo.Display" />
+
+            <TextView
+                android:id="@+id/countPill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_pill"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="5dp"
+                android:text="0 KARTU"
+                style="@style/Neo.Mono" />
+
+            <ImageView
+                android:id="@+id/btnMenu"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="10dp"
+                android:contentDescription="Menu"
+                android:src="@drawable/ic_menu"
+                style="@style/Neo.IconButton" />
+        </LinearLayout>
+
+        <id.kurasi.app.ui.view.WordmarkView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp" />
+
+        <TextView
+            android:id="@+id/tierLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/muted"
+            style="@style/Neo.Mono" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:clipToPadding="false"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/chips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+        <!-- Pencarian dan urutan -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_search"
+                android:drawableTint="@color/ink"
+                android:drawablePadding="10dp"
+                android:hint="Cari nama atau detail"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                style="@style/Neo.Input" />
+
+            <ImageView
+                android:id="@+id/btnSort"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="10dp"
+                android:contentDescription="Urutkan"
+                android:src="@drawable/ic_sort"
+                style="@style/Neo.IconButton" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingStart="14dp"
+                android:paddingTop="14dp"
+                android:paddingEnd="18dp"
+                android:paddingBottom="110dp" />
+
+            <TextView
+                android:id="@+id/noResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="TIDAK ADA KARTU YANG COCOK"
+                android:textSize="26sp"
+                android:visibility="gone"
+                style="@style/Neo.Display" />
+
+            <LinearLayout
+                android:id="@+id/empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="32dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BINDER KOSONG"
+                    android:textSize="40sp"
+                    style="@style/Neo.Display" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:text="Ketuk tombol + di bawah untuk menambah item pertamamu, atau isi dulu dengan data contoh untuk melihat semua fitur."
+                    style="@style/Neo.Body" />
+
+                <TextView
+                    android:id="@+id/btnSample"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="18dp"
+                    android:text="MUAT DATA CONTOH"
+                    style="@style/Neo.Button.White" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

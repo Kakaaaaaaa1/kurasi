@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Teks -->
+    <style name="Neo.Mono" parent="">
+        <item name="android:fontFamily">@font/mono_bold</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+    <style name="Neo.Label" parent="Neo.Mono">
+        <item name="android:textColor">@color/muted</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:letterSpacing">0.06</item>
+    </style>
+    <style name="Neo.Display" parent="">
+        <item name="android:fontFamily">@font/bebas_neue</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="Neo.Title" parent="Neo.Display">
+        <item name="android:textSize">38sp</item>
+    </style>
+    <style name="Neo.Body" parent="">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/ink</item>
+    </style>
+
+    <!-- Tombol bertepi bawah -->
+    <style name="Neo.Button" parent="">
+        <item name="android:background">@drawable/bg_btn_lime</item>
+        <item name="android:fontFamily">@font/mono_bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/onfill</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">58dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+    <style name="Neo.Button.White">
+        <item name="android:background">@drawable/bg_btn_white</item>
+        <item name="android:textColor">@color/ink</item>
+    </style>
+    <style name="Neo.Button.Pink">
+        <item name="android:background">@drawable/bg_btn_pink</item>
+    </style>
+
+    <!-- Chip berbentuk pil, selected = lime -->
+    <style name="Neo.Chip" parent="">
+        <item name="android:background">@drawable/bg_chip</item>
+        <item name="android:fontFamily">@font/mono_bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/chip_text</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">44dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!-- Input. Parent Widget.EditText wajib: tanpa itu EditText tidak bisa difokus lewat sentuhan
+         (focusableInTouchMode), karena view dibuat dengan defStyleAttr = 0. -->
+    <style name="Neo.Input" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:textColorHint">@color/muted</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- Tombol ikon bulat -->
+    <style name="Neo.IconButton" parent="">
+        <item name="android:background">@drawable/bg_icon_btn</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:tint">@color/ink</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+</resources>

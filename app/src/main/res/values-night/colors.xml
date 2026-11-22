@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ink">#F4F4ED</color>
+    <color name="bg">#111112</color>
+    <color name="paper">#1F201C</color>
+    <color name="muted">#B9BBAD</color>
+    <color name="on_ink">#111112</color>
+    <color name="accent_on_ink">#111112</color>
+</resources>

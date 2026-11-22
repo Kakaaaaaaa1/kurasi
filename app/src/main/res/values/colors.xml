@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Warna tema: nilainya berubah di values-night -->
+    <color name="ink">#111112</color>
+    <color name="bg">#F4F4ED</color>
+    <color name="paper">#FFFFFF</color>
+    <color name="muted">#55574D</color>
+    <!-- Teks pada permukaan berwarna "ink" (pil, lingkaran dock aktif) -->
+    <color name="on_ink">#F4F4ED</color>
+    <!-- Aksen di atas ink: lime di mode terang, gelap di mode gelap -->
+    <color name="accent_on_ink">#D2FF00</color>
+
+    <!-- Warna tetap -->
+    <color name="onfill">#111112</color>
+    <color name="lime">#D2FF00</color>
+    <color name="cyan">#00E5FF</color>
+    <color name="lavender">#B69CFF</color>
+    <color name="orange">#FF6B00</color>
+    <color name="pink">#FF3D81</color>
+    <color name="mint">#3DDC97</color>
+    <color name="yellow">#FFD23F</color>
+    <color name="common">#D9D9CF</color>
+    <color name="hatch_b">#ECECE2</color>
+</resources>
